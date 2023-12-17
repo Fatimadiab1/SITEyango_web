@@ -9,7 +9,6 @@
     margin-top: -8px;
     margin-bottom: -10px;
 }
-
 .logo {
     width: 100px;
     margin: 35px;
@@ -226,30 +225,40 @@
     padding-left: 100px;
 }
 
-.Commande {
+.text-shadow {
     color: black;
-    font-size: 80px;
     font-weight: 600;
-    text-align: start;
-    letter-spacing: normal;
     font-family: HFWhale;
-    font-style: italic;
+    font-size: 55px;
+    text-align:start;
+  
 }
-
+.text-shadow-drop-tl {
+	animation: text-shadow-drop-tl 0.6s both;
+}
+@keyframes text-shadow-drop-tl {
+    0% {
+      text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      text-shadow: -6px -6px 18px rgba(0, 0, 0, 0.35);
+    }
+  }
 /* PARTIE3 */
 .Client {
     margin-top: 120px;
-    display: flex;
 }
-
 .Doc {
-    width: 100%;
-    padding-left: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    height: 500px;
+font-size:20px;
+font-family: sans-serif;
+padding: 100px;
+text-align: center;
+}
+.ligne{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 }
 
 .bouton3 {
@@ -372,6 +381,10 @@ footer {
         padding: 10px;
         margin-top: 155px;
     }
+    .bouton3 {
+        margin-left: -100px;
+     
+     }
 }
 
 @media screen and (max-width:1000px) {
